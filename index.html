@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Clientes</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="tab-link active" data-tab="dashboard">Dashboard</a></li>
+                <li><a href="#" class="tab-link" data-tab="downloads">Downloads</a></li>
+                <li><a href="#" class="tab-link" data-tab="suporte">Suporte</a></li>
+                <li><a href="#" class="tab-link" data-tab="feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="dashboard" class="tab-content active">
+            <h2>Bem-vindo ao Sistema de Clientes!</h2>
+            <p>Este é o seu hub de informações e acesso rápido a funcionalidades do site. Para gerenciar clientes e chamados, por favor, utilize nosso aplicativo.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Últimos Downloads</h3>
+                    <p>Confira os arquivos mais recentes disponíveis para download.</p>
+                    <a href="#" class="btn" data-tab-redirect="downloads">Ver Downloads</a>
+                </div>
+                <div class="card">
+                    <h3>Deixar um Feedback</h3>
+                    <p>Sua opinião é importante! Envie-nos seu feedback.</p>
+                    <a href="#" class="btn" data-tab-redirect="feedback">Enviar Feedback</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="downloads" class="tab-content">
+            <div class="downloads-header">
+                <h2><i class="fas fa-download"></i> Nossos Downloads</h2>
+                <p>Explore e baixe recursos úteis para o seu sistema.</p>
+            </div>
+
+            <div class="download-item github-download">
+                <h3><i class="fab fa-github"></i> Baixar Repositório Principal (ZIP)</h3>
+                <p>Obtenha a versão mais recente do nosso repositório principal diretamente do GitHub. Ideal para desenvolvedores ou para ter uma cópia local.</p>
+                <a href="https://github.com/Pedro-Henrique2013/SetupSistemaDeClientes/archive/refs/heads/main.zip" class="btn download-btn" download>Baixar Repositório ZIP</a>
+                <small>Certifique-se de substituir 'SEU_USUARIO_GITHUB' e 'SEU_REPOSITORIO' pelos dados corretos.</small>
+            </div>
+
+            <div class="download-list">
+                <h3><i class="fas fa-file-alt"></i> Outros Documentos Importantes</h3>
+                <div class="download-item">
+                    <h4>Guia de Início Rápido</h4>
+                    <p>Um manual essencial para começar a usar o sistema rapidamente.</p>
+                    <a href="docs/guia-rapido.pdf" class="btn btn-secondary" download><i class="fas fa-file-pdf"></i> Baixar PDF</a>
+                </div>
+                <div class="download-item">
+                    <h4>Termos de Serviço</h4>
+                    <p>Leia nossos termos e condições de uso.</p>
+                    <a href="docs/termos-de-servico.pdf" class="btn btn-secondary" download><i class="fas fa-file-pdf"></i> Baixar PDF</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="suporte" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-headset"></i> Suporte ao Cliente</h2>
+                <p>Estamos aqui para ajudar! Utilize as opções abaixo para entrar em contato com nossa equipe de suporte.</p>
+            </div>
+
+            <div class="contact-info">
+                <h3><i class="fas fa-envelope"></i> E-mail de Suporte</h3>
+                <p>Para dúvidas, problemas técnicos ou assistência geral, entre em contato conosco por e-mail:</p>
+                <p class="email-address"><a href="mailto:suportedosistemadeclientes@gmail.com">suportedosistemadeclientes@gmail.com</a></p>
+                <p>Responderemos o mais breve possível.</p>
+            </div>
+
+            <div class="contact-form">
+                <h3><i class="fas fa-paper-plane"></i> Envie-nos uma Mensagem Rápida</h3>
+                <p>Você pode clicar no botão abaixo para abrir seu cliente de e-mail padrão com nosso endereço já preenchido.</p>
+                <a href="mailto:suportedosistemadeclientes@gmail.com?subject=Suporte%20ao%20Sistema%20de%20Clientes&body=Descreva%20aqui%20sua%20dúvida%20ou%20problema%3A" class="btn send-email-btn">Abrir E-mail de Suporte</a>
+                <small>Se preferir, copie o endereço de e-mail acima e envie sua mensagem manualmente.</small>
+            </div>
+
+            <div class="faq-section">
+                <h3><i class="fas fa-question-circle"></i> Perguntas Frequentes (FAQ)</h3>
+                <p>Antes de entrar em contato, confira nossa seção de FAQ para soluções rápidas.</p>
+                <ul class="faq-list">
+                    <li><strong>Como redefinir minha senha?</strong>
+                        <p>Você pode redefinir sua senha através da página de login do aplicativo.</p>
+                    </li>
+                    <li><strong>Onde encontro os últimos recursos para download?</strong>
+                        <p>Visite a aba <a href="#" data-tab-redirect="downloads">Downloads</a> para acessar todos os nossos recursos.</p>
+                    </li>
+                    </ul>
+            </div>
+        </section>
+
+        <section id="feedback" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-comment-dots"></i> Deixe seu Feedback</h2>
+                <p>Sua opinião é muito importante para nós! Ajude-nos a melhorar o sistema enviando suas sugestões, elogios ou críticas.</p>
+            </div>
+
+            <div class="contact-info">
+                <h3><i class="fas fa-envelope-open-text"></i> E-mail para Feedback</h3>
+                <p>Envie suas sugestões, elogios ou críticas diretamente para:</p>
+                <p class="email-address"><a href="mailto:suportedosistemadeclientes@gmail.com">suportedosistemadeclientes@gmail.com</a></p>
+                <p>Valorizamos cada contribuição!</p>
+            </div>
+
+            <div class="contact-form">
+                <h3><i class="fas fa-lightbulb"></i> Compartilhe sua Ideia</h3>
+                <p>Clique no botão abaixo para abrir seu cliente de e-mail e nos enviar sua ideia ou feedback.</p>
+                <a href="mailto:suportedosistemadeclientes@gmail.com?subject=Feedback%20Sistema%20de%20Clientes&body=Descreva%20aqui%20seu%20feedback%20ou%20sugestão%3A" class="btn send-email-btn">Enviar Feedback por E-mail</a>
+                <small>Nosso e-mail de feedback é o mesmo do suporte para facilitar a comunicação.</small>
+            </div>
+
+            <div class="suggestion-tips">
+                <h3><i class="fas fa-info-circle"></i> Dicas para um Bom Feedback</h3>
+                <ul>
+                    <li>Seja claro e específico sobre o que você gostou ou não gostou.</li>
+                    <li>Inclua exemplos ou cenários de uso, se possível.</li>
+                    <li>Sugestões de melhoria são sempre bem-vindas!</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Clientes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
